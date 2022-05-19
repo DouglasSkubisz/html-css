@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        caption{
+            font-size: 1.5em;
+            background-color: lightgreen;
+            font-weight: bolder;
+            padding: 10px;
+            border-radius: 10px top-left top-right;
+            border: 1px solid black;
+        }
+        table{
+            width: 380px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+        CAPTION
+            Thead
+                tr,td,TH=TITULO
+            Tbody
+                tr,td,th
+            Tfoot
+                tr,td,th
+    -->
+    <table>
+        <caption>População dos Países</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>230000</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>560000</td>
+            </tr>
+            <tr>
+                <td>Inglaterra</td>
+                <td>90000</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td>740000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total de Habitantes</th>
+            <td>1000000</td>
+
+        </tfoot>
+    </table>
+</body>
+</html>
